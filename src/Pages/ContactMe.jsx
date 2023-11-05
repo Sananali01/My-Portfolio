@@ -91,19 +91,6 @@ export default function ContactMe() {
             </a>
           </div>
         </div>
-
-        <div className="map-container">
-          <h3>Location</h3>
-          <iframe
-            width="100%"
-            height="300"
-            frameBorder="0"
-            scrolling="no"
-            marginHeight="0"
-            marginWidth="0"
-            src="https://maps.app.goo.gl/iqk2kSt3VLtodJ7R7"
-          ></iframe>
-        </div>
       </section>
     </>
   );
