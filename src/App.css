@@ -760,22 +760,6 @@ margin: 10px auto;
   color: #1877F2;
   /* Customize the color for Facebook */
 }
-
-
-.map-container {
-  text-align: center;
-  margin: 70px auto;
-}
-.map-container h3{
-  font-size: 4rem;
-  color: #0085cd;
-  margin-bottom: 20px;
-}
-
-.map-container iframe {
- border-radius: 25px;
-}
-
 /* Contact End */
 
 /* Responsive Screens */
