@@ -26,7 +26,7 @@ export default function Me() {
         years++;
         setYearsOfExperience(years);
 
-        if (years >= 5) {
+        if (years >= 1) {
           clearInterval(interval);
         }
       }, 40);
@@ -35,7 +35,7 @@ export default function Me() {
         projects++;
         setCompletedProjects(projects);
 
-        if (projects >= 25) {
+        if (projects >= 6) {
           clearInterval(interval2);
         }
       }, 40);
@@ -44,7 +44,7 @@ export default function Me() {
         customers++;
         setHappyCustomers(customers);
 
-        if (customers >= 50) {
+        if (customers >= 3) {
           clearInterval(interval3);
         }
       }, 40);
@@ -53,7 +53,7 @@ export default function Me() {
         awards++;
         setAwardsWon(awards);
 
-        if (awards >= 3) {
+        if (awards >= 2) {
           clearInterval(interval4);
         }
       }, 40);
