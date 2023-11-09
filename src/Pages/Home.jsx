@@ -32,7 +32,7 @@ export default function Home() {
           </a>
           <br/>
           <div className="social-icons">
-              <a href="www.linkedin.com/in/sananali007">
+              <a href="https://www.linkedin.com/in/sananali007/">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
               <a href="https://github.com/Sananali01" target="_blank" >
