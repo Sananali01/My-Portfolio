@@ -72,7 +72,7 @@ export default function ContactMe() {
               <span>Instagram</span>
             </a>
             <a
-              href="www.linkedin.com/in/sananali007"
+              href="https://www.linkedin.com/in/sananali007/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-link"
