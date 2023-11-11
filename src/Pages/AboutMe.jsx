@@ -194,7 +194,7 @@ export default function Me() {
                   <FontAwesomeIcon icon={faBriefcase} />
                 </div>
                 <p className="item-details">
-                  <span className="span">Position:</span> Front-End Developer
+                  <span className="span">Position:</span> React JS Developer
                   <br />
                   <span className="span">Company:</span> Lofty Logix.
                   <br />

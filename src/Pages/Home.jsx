@@ -1,5 +1,5 @@
 import resumeFile from "../images/Sanan CV.pdf";
-import img from "../images/sanan.png";
+import img from "../images/pic.png";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import homeFavicon from "../images/home.png"
