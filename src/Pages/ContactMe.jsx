@@ -32,19 +32,19 @@ export default function ContactMe() {
             <p>
               <span>
                 {" "}
-                <FontAwesomeIcon icon={faEnvelope} style={{ color: "#0085cd" }} />&nbsp; Email: 
+                <FontAwesomeIcon icon={faEnvelope} style={{ color: "#ffc107" }} />&nbsp; Email: 
               </span>
               <a href="mailto:sananali010@gmail.com">sananali010@gmail.com</a>
             </p>
             <p>
               <span>
-                <FontAwesomeIcon icon={faPhoneVolume} style={{ color: "#0085cd" }} /> &nbsp;  Phone:{" "}
+                <FontAwesomeIcon icon={faPhoneVolume} style={{ color: "#ffc107" }} /> &nbsp;  Phone:{" "}
               </span>
               +92-311-6566223
             </p>
             <p>
               <span>
-                <FontAwesomeIcon icon={faLocationCrosshairs} style={{ color: "#0085cd" }} />&nbsp; 
+                <FontAwesomeIcon icon={faLocationCrosshairs} style={{ color: "#ffc107" }} />&nbsp; 
                 Address:
               </span>{" "}
               Ferozpur Road, Lahore, Pakistan
