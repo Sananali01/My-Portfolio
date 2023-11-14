@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Helmet } from 'react-helmet';
 import aboutFavicon from "../images/ab.png"
+import { faUser, faBirthdayCake, faFlag, faEnvelope, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Me() {
@@ -75,28 +76,44 @@ export default function Me() {
               <h3 className="custom-title">Personal Info</h3>
             </div>
             <div className="custom-info-content">
-              <ul className="custom-info-list">
-                <li>
-                  <span className="custom-info-title">Full Name:</span> Sanan
-                  Ali
-                </li>
-                <li>
-                  <span className="custom-info-title">Age:</span> 21 Years
-                </li>
-                <li>
-                  <span className="custom-info-title">Nationality:</span>{" "}
-                  Pakistani
-                </li>
-                <li>
-                  <span className="custom-info-title">Email:</span>{" "}
-                  sananali010@gmail.com
-                </li>
-                <li>
-                  <span className="custom-info-title">Location:</span> Lahore,
-                  Pakistan
-                </li>
-              </ul>
-            </div>
+            <ul className="custom-info-list">
+              <li>
+                <span className="custom-info-icon">
+                  <FontAwesomeIcon icon={faUser} style={{ color: "#ffc107" }}  />
+                </span>
+                &nbsp;
+                <span className="custom-info-title">Full Name:</span> Sanan Ali
+              </li>
+              <li>
+                <span className="custom-info-icon">
+                  <FontAwesomeIcon icon={faBirthdayCake} style={{ color: "#ffc107" }}  />
+                </span>
+                &nbsp;
+                <span className="custom-info-title">Age:</span> 21 Years
+              </li>
+              <li>
+                <span className="custom-info-icon">
+                  <FontAwesomeIcon icon={faFlag} style={{ color: "#ffc107" }}  />
+                </span>
+                &nbsp;
+                <span className="custom-info-title">Nationality:</span> Pakistani
+              </li>
+              <li>
+                <span className="custom-info-icon">
+                  <FontAwesomeIcon icon={faEnvelope} style={{ color: "#ffc107" }} />
+                </span>
+                &nbsp;
+                <span className="custom-info-title">Email:</span> sananali010@gmail.com
+              </li>
+              <li>
+                <span className="custom-info-icon">
+                  <FontAwesomeIcon icon={faMapMarkerAlt}  style={{ color: "#ffc107" }} />
+                </span>
+                &nbsp;
+                <span className="custom-info-title">Location:</span> Lahore, Pakistan
+              </li>
+            </ul>
+          </div>
           </div>
 
           <div className="custom-stats">
@@ -148,64 +165,6 @@ export default function Me() {
           </div>
           <div className="about--section--img">
             <img src={image} alt="About Me" />
-          </div>
-        </section>
-        <section
-          id="EducationExperience"
-          className="education-experience--section"
-        >
-          <h1 className="education-experience--main-title">
-            Education & Experience
-          </h1>
-          <div className="education-experience--box">
-            <div className="education-experience--column">
-              <div className="education-experience--item">
-                <div className="item-icon">
-                  <FontAwesomeIcon icon={faGraduationCap} />
-                </div>
-
-                <p className="item-details">
-                  <span className="span">Degree:</span> Bachelors in Computer
-                  Science
-                  <br />
-                  <span className="span">University:</span> PMAS Arid
-                  Agriculture University
-                  <br />
-                  <span className="span">Year:</span> 2020-2024
-                </p>
-              </div>
-              <div className="education-experience--item">
-                <div className="item-icon">
-                  <FontAwesomeIcon icon={faGraduationCap} />
-                </div>
-                <p className="item-details">
-                  <span className="span">Intermediate:</span> F.Sc
-                  Pre-Engenieering
-                  <br />
-                  <span className="span">College:</span> Govt.Shalimar College
-                  <br />
-                  <span className="span">Year:</span> 2018-2020
-                </p>
-              </div>
-            </div>
-            <div className="education-experience--column">
-              <div className="education-experience--item">
-                <div className="item-icon">
-                  <FontAwesomeIcon icon={faBriefcase} />
-                </div>
-                <p className="item-details">
-                  <span className="span">Position:</span> React JS Developer
-                  <br />
-                  <span className="span">Company:</span> Lofty Logix.
-                  <br />
-                  <span className="span">Year:</span> 2023
-                  <br />
-                  <span className="span">Description:</span> Worked On Different
-                  Web Frameworks Like React.Js, Bootstrap, Javscript, HTML5,
-                  CSS3 .
-                </p>
-              </div>
-            </div>
           </div>
         </section>
       </section>
