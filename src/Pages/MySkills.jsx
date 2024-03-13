@@ -72,7 +72,7 @@ export default function MySkills() {
   return (
     <>
     <Helmet>
-        <title> Skills </title>
+        <title> Skills | Sanan Ali </title>
         <link rel="icon" type="image/png" href={skillsFavicon} />
       </Helmet>
       <section className="skills--section" id="mySkills">

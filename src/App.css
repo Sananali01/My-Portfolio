@@ -210,7 +210,7 @@ h2 {
   padding: 10px 20px;
   background-color: #ffc107;
   /* Button background color */
-  color: #333333;
+  color: #000000;
   /* Button text color */
   border: none;
   border-radius: 5px;
@@ -222,6 +222,7 @@ h2 {
 }
 
 .contact-button:hover {
+  color: white;
   background-color: transparent;
   border: 2px solid #ffc107;
 }
@@ -906,7 +907,7 @@ margin: 10px auto;
     z-index: 200;
     padding: 10px;
     background: black;
-    border-radius: 30px;
+
   }
 
   .navbar--items {

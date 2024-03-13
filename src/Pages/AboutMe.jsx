@@ -66,7 +66,7 @@ export default function Me() {
   return (
     <>
       <Helmet>
-        <title> About Me </title>
+        <title> About Me | Sanan Ali </title>
         <link rel="icon" type="image/png" href={aboutFavicon} />
       </Helmet>
       <section className="about-section">

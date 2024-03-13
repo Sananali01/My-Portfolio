@@ -41,7 +41,7 @@ export default function MyPortfolio() {
     {
       title: "Lofty Logix Portfolio",
       src: Pr5,
-      link: "https://lofty-portfolio.vercel.app/",
+      link: "https://loftylogix.com/",
     },
     {
       title: "Ecommerce Shop",
@@ -73,7 +73,7 @@ export default function MyPortfolio() {
   return (
     <>
     <Helmet>
-    <title>     Projects     </title>
+    <title>     Projects | Sanan Ali     </title>
     <link rel="icon" type="image/png" href={prFavicon} />
     </Helmet>
       <section className="portfolio--section" id="MyPortfolio">

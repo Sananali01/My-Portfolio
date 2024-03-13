@@ -18,7 +18,7 @@ export default function ContactMe() {
   return (
     <>
       <Helmet>
-        <title>Contact Me</title>
+        <title>Contact Me | Sanan Ali </title>
         <link rel="icon" type="image/png" href={contactFavicon} />
       </Helmet>
       <section id="Contact" className="contact-section">

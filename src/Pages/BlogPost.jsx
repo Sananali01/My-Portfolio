@@ -13,7 +13,7 @@ export default function BlogPost() {
     return (
       <>
         <Helmet>
-          <title>Blog not Found</title>
+          <title>Blog not Found | Sanan Ali </title>
           <link rel="icon" type="image/png" href={error} />
         </Helmet>
         <div className="center-container">

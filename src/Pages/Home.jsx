@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title> Home </title>
+        <title> Home | Sanan Ali </title>
         <link rel="icon" type="image/png" href={homeFavicon} />
       </Helmet>
       <section id="heroSection" className="hero--section">

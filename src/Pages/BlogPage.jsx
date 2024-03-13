@@ -7,7 +7,7 @@ import blogFavicon from "../images/blog.png"
 
 function BlogPage() {
   // Define the number of blogs to display per page
-  const blogsPerPage = 6;
+  const blogsPerPage = 5;
 
   // State to track the current page
   const [currentPage, setCurrentPage] = useState(1);
@@ -22,7 +22,7 @@ function BlogPage() {
   return (
     <>
       <Helmet>
-        <title>Blog</title>
+        <title>Blog | Sanan Ali </title>
         <link rel="icon" type="image/png" href={blogFavicon} />
       </Helmet>
 
