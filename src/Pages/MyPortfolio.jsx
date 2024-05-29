@@ -57,9 +57,9 @@ export default function MyPortfolio() {
       link: "https://store-shop-mauve.vercel.app/",
     },
     {
-      title: "Ticket Selling App",
+      title: "Ticket Selling",
       src: Pr8,
-      link: "https://landing-pagesasa.netlify.app/",
+      link: "https://ticket-landing-page.netlify.app/",
     },
     // Add more projects here
   ];
