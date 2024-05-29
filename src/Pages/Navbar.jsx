@@ -83,7 +83,7 @@ function Navbar() {
           </li>
           <li className={location.pathname === "/AboutMe" ? "active" : ""}>
             <Link onClick={closeMenu} to="/AboutMe" className="navbar--content">
-              <FontAwesomeIcon icon={faUser} /> About Me
+              <FontAwesomeIcon icon={faUser} /> About Me 
             </Link>
           </li>
           <li className={location.pathname === "/BlogPage" ? "active" : ""}>
