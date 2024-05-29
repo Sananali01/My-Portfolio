@@ -8,6 +8,7 @@ import Pr3 from "../images/Projects/Project3.png";
 import Pr4 from "../images/Projects/Project4.png";
 import Pr5 from "../images/Projects/Project5.png";
 import Pr6 from "../images/Projects/Project6.png";
+import Pr8 from "../images/Projects/Project8.png";
 import testimonialData from "./TestimonialData";
 import { Helmet } from "react-helmet";
 import prFavicon from "../images/project.png"
@@ -47,6 +48,11 @@ export default function MyPortfolio() {
       title: "Ecommerce Shop",
       src: Pr6,
       link: "https://store-shop-mauve.vercel.app/",
+    },
+    {
+      title: "Ticket Selling App",
+      src: Pr8,
+      link: "https://landing-pagesasa.netlify.app/",
     },
     // Add more projects here
   ];
