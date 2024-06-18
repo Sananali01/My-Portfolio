@@ -8,7 +8,7 @@ import Pr3 from "../images/Projects/Project3.png";
 import Pr4 from "../images/Projects/Project4.png";
 import Pr5 from "../images/Projects/Project5.png";
 import Pr6 from "../images/Projects/Project6.png";
-import Pr7 from "../images/Projects/Project9.png";
+import Pr7 from "../images/Projects/Project7.png";
 import Pr8 from "../images/Projects/Project8.png";
 import Pr9 from "../images/Projects/Project9.png";
 import Pr10 from "../images/Projects/Project10.png";
