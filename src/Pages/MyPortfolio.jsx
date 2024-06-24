@@ -13,8 +13,6 @@ import Pr8 from "../images/Projects/Project8.png";
 import Pr9 from "../images/Projects/Project9.png";
 import Pr10 from "../images/Projects/Project10.png";
 
-
-import testimonialData from "./TestimonialData";
 import { Helmet } from "react-helmet";
 import prFavicon from "../images/project.png"
 
@@ -77,24 +75,6 @@ export default function MyPortfolio() {
     // Add more projects here
   ];
 
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
-  const [showTestimonial, setShowTestimonial] = useState(false);
-
-  const nextTestimonial = () => {
-    setCurrentTestimonial((prevIndex) =>
-      prevIndex === testimonialData.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevTestimonial = () => {
-    setCurrentTestimonial((prevIndex) =>
-      prevIndex === 0 ? testimonialData.length - 1 : prevIndex - 1
-    );
-  };
-
-  const toggleTestimonial = () => {
-    setShowTestimonial(!showTestimonial);
-  };
 
   return (
     <>
@@ -111,38 +91,6 @@ export default function MyPortfolio() {
                 </a>
           </button>
 
-          <button className="awesome-button" onClick={toggleTestimonial}>
-            <b>Show Reviews!</b>
-          </button>
-          {showTestimonial && (
-            <section className="testimonial-section">
-              <h2 className="testimonial-heading">Reviews</h2>
-              <div className="testimonial-slider">
-                {testimonialData.map((testimonial, index) => (
-                  <div
-                    key={testimonial.id}
-                    className={`testimonial ${
-                      index === currentTestimonial ? "active" : ""
-                    }`}
-                  >
-                    <p className="testtimonial-para">
-                      " {testimonial.review} "
-                    </p>
-                    <p className="testtimonial-para">- {testimonial.name}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="testimonial-buttons">
-                <button onClick={prevTestimonial} className="prev-button">
-                  &lt; Previous
-                </button>
-                &nbsp;&nbsp;
-                <button onClick={nextTestimonial} className="next-button">
-                  Next &gt;
-                </button>
-              </div>
-            </section>
-          )}
         </div>
         <div className="portfolio--section--container">
           {portfolioData.map((item, index) => (

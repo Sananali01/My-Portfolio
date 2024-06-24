@@ -26,7 +26,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 571) {
+      if (window.innerWidth >= 769) {
         setShowServices(false);
       } else {
         setShowServices(true);

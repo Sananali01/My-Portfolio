@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from "react";
 import image from "../images/about.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGraduationCap,
-  faBriefcase,
-} from "@fortawesome/free-solid-svg-icons";
 import { Helmet } from 'react-helmet';
 import aboutFavicon from "../images/ab.png"
 import { faUser, faBirthdayCake, faFlag, faEnvelope, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+
 
 
 export default function Me() {
@@ -36,7 +33,7 @@ export default function Me() {
         projects++;
         setCompletedProjects(projects);
 
-        if (projects >= 6) {
+        if (projects >= 10) {
           clearInterval(interval2);
         }
       }, 40);
@@ -76,44 +73,32 @@ export default function Me() {
               <h3 className="custom-title">Personal Info</h3>
             </div>
             <div className="custom-info-content">
-            <ul className="custom-info-list">
-              <li>
-                <span className="custom-info-icon">
-                  <FontAwesomeIcon icon={faUser} style={{ color: "#ffc107" }}  />
-                </span>
-                &nbsp;
-                <span className="custom-info-title">Full Name:</span> Sanan Ali
-              </li>
-              <li>
-                <span className="custom-info-icon">
-                  <FontAwesomeIcon icon={faBirthdayCake} style={{ color: "#ffc107" }}  />
-                </span>
-                &nbsp;
-                <span className="custom-info-title">Age:</span> 21 Years
-              </li>
-              <li>
-                <span className="custom-info-icon">
-                  <FontAwesomeIcon icon={faFlag} style={{ color: "#ffc107" }}  />
-                </span>
-                &nbsp;
-                <span className="custom-info-title">Nationality:</span> Pakistani
-              </li>
-              <li>
-                <span className="custom-info-icon">
-                  <FontAwesomeIcon icon={faEnvelope} style={{ color: "#ffc107" }} />
-                </span>
-                &nbsp;
-                <span className="custom-info-title">Email:</span> sananali010@gmail.com
-              </li>
-              <li>
-                <span className="custom-info-icon">
-                  <FontAwesomeIcon icon={faMapMarkerAlt}  style={{ color: "#ffc107" }} />
-                </span>
-                &nbsp;
-                <span className="custom-info-title">Location:</span> Lahore, Pakistan
-              </li>
-            </ul>
-          </div>
+              <ul className="custom-info-list">
+                <li>
+                  <span className="custom-info-icon">
+                    <FontAwesomeIcon icon={faUser} style={{ color: "#000000" }} />
+                  </span>
+                  &nbsp;
+                  <span className="custom-info-title">Full Name:</span> Sanan Ali
+                </li>
+                <li>
+                  <span className="custom-info-icon">
+                    <FontAwesomeIcon icon={faBirthdayCake} style={{ color: "#000000" }} />
+                  </span>
+                  &nbsp;
+                  <span className="custom-info-title">Age:</span> 21 Years
+                </li>
+
+                <li>
+                  <span className="custom-info-icon">
+                    <FontAwesomeIcon icon={faEnvelope} style={{ color: "#000000" }} />
+                  </span>
+                  &nbsp;
+                  <span className="custom-info-title">Email:</span> sananali010@gmail.com
+                </li>
+
+              </ul>
+            </div>
           </div>
 
           <div className="custom-stats">
@@ -146,20 +131,10 @@ export default function Me() {
             <div className="about--section--content">
               <h1 className="about--section--title">ABOUT ME</h1>
               <p className="about--section--description">
-                I'm a Pakistan-based Web Designer and Front-end Developer with a
-                mission to create clean and user-friendly experiences. I am
-                passionate about crafting excellent software that not only
-                enhances the digital world but also improves the lives of those
-                it touches.
+                I'm a Web Designer and Front-end Developer with a mission to create clean and user-friendly experiences. I am passionate about crafting excellent software that not only enhances the digital world but also improves the lives of those it touches.
               </p>
               <p className="about--section--description">
-                As a MERN stack developer, I thrive on building dynamic and
-                responsive web applications that seamlessly integrate the power
-                of MongoDB, Express, React, and Node.js. Whether it's designing
-                elegant user interfaces or developing robust back-end systems,
-                I'm dedicated to bringing innovative ideas to life. Let's
-                collaborate and turn your digital vision into a reality that
-                leaves a lasting impact.
+                As a MERN stack developer, I thrive on building dynamic and responsive web applications that seamlessly integrate the power of MongoDB, Express, React, and Node.js. Whether it's designing elegant user interfaces or developing robust back-end systems, I'm dedicated to bringing innovative ideas to life. Let's collaborate and turn your digital vision into a reality that leaves a lasting impact.
               </p>
             </div>
           </div>
@@ -168,6 +143,7 @@ export default function Me() {
           </div>
         </section>
       </section>
+
     </>
   );
 }
