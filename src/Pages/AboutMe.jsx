@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import image from "../images/about.png";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Helmet } from 'react-helmet';
 import aboutFavicon from "../images/ab.png"
@@ -138,9 +138,7 @@ export default function Me() {
               </p>
             </div>
           </div>
-          <div className="about--section--img">
-            <img src={image} alt="About Me" />
-          </div>
+ 
         </section>
       </section>
 
