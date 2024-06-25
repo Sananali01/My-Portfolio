@@ -128,7 +128,7 @@ export default function Me() {
                 <h3 className="education--title">FSc Pre-Engineering</h3>
                 <p className="education--details">
                 <FontAwesomeIcon icon={faGraduationCap}/> Govt.Shalimar College <span style={{float:"inline-end"}}>
-                 <FontAwesomeIcon icon={faMapMarkerAlt} /> Shalimar Town, Lahore</span>
+                 <FontAwesomeIcon icon={faMapMarkerAlt} /> Shalimar, Lahore</span>
                   <br /><br />
                   Completed: May 2020
                   <span style={{float:"inline-end"}}>2 Years</span>
