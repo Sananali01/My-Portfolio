@@ -22,7 +22,7 @@ export default function MyPortfolio() {
         "A comprehensive system for managing various aspects of campus life, including student information, course registration, and administrative tasks.",
       technologies: ["React JS", "Node JS", "MongoDB","Material UI"],
       src: Pr1,
-      link: "https://your-cms-project-url.com/",
+      link: "https://github.com/Sananali01/Campus-Management-System",
     },
     {
       title: "Lofty Logix",
