@@ -14,7 +14,7 @@ import vscodeImage from "../images/Skills/vscode.png";
 import npmImage from "../images/Skills/npm.png";
 import gitImage from "../images/Skills/git.png";
 import skillsFavicon from '../images/skill.png';
-import figmaImage from "../images/Skills/figma.png";
+import firebaseImage from "../images/Skills/firebase.png";
 
 
 export default function MySkills() {
@@ -35,7 +35,7 @@ export default function MySkills() {
     { title: "Visual Studio Code", src: vscodeImage },
     { title: "NPM", src: npmImage },
     { title: "Git", src: gitImage },
-    { title: "Figma", src: figmaImage },
+    { title: "FireBase", src: firebaseImage },
   ];
 
   return (

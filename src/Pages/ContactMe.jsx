@@ -24,7 +24,6 @@ export default function ContactMe() {
       <section id="Contact" className="contact-section">
         <div className="contact-title-section">
           <p className="sub-title">Get In Touch</p>
-          <h2 className="section-heading">Contact Me</h2>
         </div>
         <div className="contact-info-container">
           <div className="contact-info">
@@ -40,12 +39,6 @@ export default function ContactMe() {
                 <FontAwesomeIcon icon={faPhoneVolume} /> Phone:
               </span>{" "}
               +92-311-6566223
-            </p>
-            <p>
-              <span>
-                <FontAwesomeIcon icon={faLocationCrosshairs} /> Address:
-              </span>{" "}
-              Ferozpur Road, Lahore, Pakistan
             </p>
           </div>
           <div className="social-media-icons">
