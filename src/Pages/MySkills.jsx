@@ -8,86 +8,64 @@ import reactImage from "../images/Skills/react.png";
 import reduxImage from "../images/Skills/redux.png";
 import nodeImage from "../images/Skills/node.png";
 import muiImage from "../images/Skills/mui.png";
-import jqueryImage from "../images/Skills/Jquery.png";
 import githubImage from "../images/Skills/github.png";
-import expressImage from "../images/Skills/express.png";
 import mongodbImage from "../images/Skills/mongodb.png";
+import vscodeImage from "../images/Skills/vscode.png";
+import npmImage from "../images/Skills/npm.png";
+import gitImage from "../images/Skills/git.png";
 import skillsFavicon from '../images/skill.png';
+import figmaImage from "../images/Skills/figma.png";
+
 
 export default function MySkills() {
-  // Define the data within the component
-  const skillsData = [
-    {
-      title: "HTML",
-      src: htmlImage,
-    },
-    {
-      title: "CSS",
-      src: cssImage,
-    },
-    {
-      title: "JavaScript",
-      src: javascriptImage,
-    },
-    {
-      title: "Bootstrap",
-      src: bootstrapImage,
-    },
-    {
-      title: "jQuery",
-      src: jqueryImage,
-    },
-    {
-      title: "React JS",
-      src: reactImage,
-    },
+  const technologies = [
+    { title: "HTML", src: htmlImage },
+    { title: "CSS", src: cssImage },
+    { title: "JavaScript", src: javascriptImage },
+    { title: "Bootstrap", src: bootstrapImage },
+    { title: "React JS", src: reactImage },
+    { title: "Redux", src: reduxImage },
+    { title: "Material-UI", src: muiImage },
+    { title: "Node JS", src: nodeImage },
+    { title: "MongoDB", src: mongodbImage },
+  ];
 
-    {
-      title: "Redux",
-      src: reduxImage,
-    },
-    {
-      title: "Material-UI",
-      src: muiImage,
-    },
-    {
-      title: "Node JS",
-      src: nodeImage,
-    },
-    {
-      title: "Express JS",
-      src: expressImage,
-    },
-
-    {
-      title: "MongoDB",
-      src: mongodbImage,
-    },
-    {
-      title: "GitHub",
-      src: githubImage,
-    },
+  const tools = [
+    { title: "GitHub", src: githubImage },
+    { title: "Visual Studio Code", src: vscodeImage },
+    { title: "NPM", src: npmImage },
+    { title: "Git", src: gitImage },
+    { title: "Figma", src: figmaImage },
   ];
 
   return (
     <>
-    <Helmet>
-        <title> Skills | Sanan Ali </title>
+      <Helmet>
+        <title>Skills | Sanan Ali</title>
         <link rel="icon" type="image/png" href={skillsFavicon} />
       </Helmet>
       <section className="skills--section" id="mySkills">
-        <h1 className="skill-title">Skills</h1>
         <div className="skills--section--container">
-          {skillsData.map((item, index) => (
-            <div key={index} className="skills--section--card">
-              <div className="skills--section--img">
+        <h2>Tools</h2>
+        <div className="skills--section--subcategory">
+            {tools.map((item, index) => (
+              <div key={index} className="skills--section--card">
                 <img src={item.src} alt={item.title} />
-              </div>
-              <div className="skills--section--card--content">
                 <h3 className="skills--section--title">{item.title}</h3>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <h2>Technologies</h2>
+          <div className="skills--section--subcategory">
+            {technologies.map((item, index) => (
+              <div key={index} className="skills--section--card">
+                <img src={item.src} alt={item.title} />
+                <h3 className="skills--section--title">{item.title}</h3>
+              </div>
+            ))}
+          </div>
+    
+          
         </div>
       </section>
     </>

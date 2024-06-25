@@ -18,7 +18,7 @@ export default function Home() {
           <div className="hero--section--content">
             <p className="section--title">Hey, I'm Sanan Ali</p>
             <h1 className="hero--section--title">
-              <span >Mern Stack</span> <br />
+              <span >Web</span> <br />
               Developer
             </h1>
           </div>
