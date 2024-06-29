@@ -4,7 +4,8 @@ import { Helmet } from "react-helmet";
 import { useParams, Link } from "react-router-dom";
 import error from "../images/error2.png";
 
-export default function BlogPost() {
+
+function BlogPost() {
   const { id } = useParams();
   const blogId = parseInt(id, 10);
 
@@ -13,7 +14,7 @@ export default function BlogPost() {
     return (
       <>
         <Helmet>
-          <title>Blog not Found | Sanan Ali </title>
+          <title>Blog not Found | Sanan Ali</title>
           <link rel="icon" type="image/png" href={error} />
         </Helmet>
         <div className="center-container">
@@ -38,7 +39,7 @@ export default function BlogPost() {
       <div className="blog-post-container">
         <h2 className="blog-post-title">{blog.title}</h2>
         <div className="blog-post-image">
-          <img src={blog.image} alt={blog.title} className="blog-post-image" />
+          <img src={blog.image} alt={blog.title} />
         </div>
         <div className="blog-navigation">
           {prevBlogId >= 0 && (
@@ -52,8 +53,12 @@ export default function BlogPost() {
             </Link>
           )}
         </div>
-        <p className="blog-post-content">{blog.content}</p>
+        <div className="blog-post-content">
+          {blog.content}
+        </div>
       </div>
     </>
   );
 }
+
+export default BlogPost;
