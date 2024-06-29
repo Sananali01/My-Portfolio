@@ -563,7 +563,7 @@ p {
 }
 
 .portfolio-technologies {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-bottom: 15px;
 }
 
@@ -577,6 +577,12 @@ p {
 .portfolio-link:hover {
   text-decoration: underline;
 }
+
+
+.technology-icon {
+  margin: 0 8px;
+}
+
 @media (min-width: 320px) and (max-width: 350px) {
   .portfolio-grid {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
