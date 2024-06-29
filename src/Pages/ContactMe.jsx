@@ -27,19 +27,24 @@ export default function ContactMe() {
         </div>
         <div className="contact-info-container">
           <div className="contact-info">
-            <h3>Contact Information</h3>
-            <p>
-              <span>
-                <FontAwesomeIcon icon={faEnvelope} /> Email:
-              </span>{" "}
-              <a href="mailto:sananali010@gmail.com">sananali010@gmail.com</a>
-            </p>
-            <p>
-              <span>
-                <FontAwesomeIcon icon={faPhoneVolume} /> Phone:
-              </span>{" "}
-              +92-311-6566223
-            </p>
+            <div>
+              <h3>Drop Us a Mail</h3>
+              <p>
+                <span>
+                  <FontAwesomeIcon icon={faEnvelope} /> Email:
+                </span>{" "}
+                <a href="mailto:sananali010@gmail.com">sananali010@gmail.com</a>
+              </p>
+            </div>
+            <div>
+              <h3>Call Us</h3>
+              <p>
+                <span>
+                  <FontAwesomeIcon icon={faPhoneVolume} /> Phone:
+                </span>{" "}
+                +92-311-6566223
+              </p>
+            </div>
           </div>
           <div className="social-media-icons">
             <h3>Social Media</h3>
