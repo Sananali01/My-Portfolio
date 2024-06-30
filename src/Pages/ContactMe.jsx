@@ -74,7 +74,7 @@ export default function ContactMe() {
             </div>
           </div>
           <div className="contact-form-container">
-            <h3>Contact Form</h3>
+            <h3>Contact Us</h3>
             <form>
               <label htmlFor="name">Name</label>
               <input type="text" id="name" name="name" required placeholder="Enter your Name" />
@@ -83,7 +83,7 @@ export default function ContactMe() {
               <input type="email" id="email" name="email" required placeholder="Enter your Email"/>
 
               <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" rows="4" required placeholder="Enter your Message"></textarea>
+              <textarea id="message" name="message" rows="5" required placeholder="Enter your Message"></textarea>
 
               <button type="submit">Send Message</button>
             </form>
