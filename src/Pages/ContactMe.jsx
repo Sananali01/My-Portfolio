@@ -5,14 +5,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
   faPhoneVolume,
-  faLocationCrosshairs,
 } from "@fortawesome/free-solid-svg-icons";
 import {
-  faGithub,
-  faLinkedin,
+  faFacebookF,
+  faTwitter,
+  faGoogle,
   faInstagram,
-  faFacebook,
-} from "@fortawesome/free-brands-svg-icons";
+  faLinkedinIn,
+  faGithub,
+  faYoutube,
+  faPinterest,
+  faTiktok,
+  faSnapchat
+} from '@fortawesome/free-brands-svg-icons';
 
 export default function ContactMe() {
   return (
@@ -45,49 +50,46 @@ export default function ContactMe() {
                 +92-311-6566223
               </p>
             </div>
-          </div>
-          <div className="social-media-icons">
-            <h3>Social Media</h3>
-            <div className="social-links">
-              <a
-                href="https://github.com/Sananali01"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-link"
-              >
-                <FontAwesomeIcon icon={faGithub} className="icon" />
-                <span>GitHub</span>
+            <div className="social-media">
+              <h2>Follow Us on Social Media</h2>
+              <a className="btn facebook" href="https://www.facebook.com/SananAli53/" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faFacebookF} />
               </a>
-              <a
-                href="https://www.instagram.com/_exotic.sanan/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-link"
-              >
-                <FontAwesomeIcon icon={faInstagram} className="icon" />
-                <span>Instagram</span>
+
+              <a className="btn instagram" href="https://www.instagram.com/_exotic.sanan/" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faInstagram} />
               </a>
-              <a
-                href="https://www.linkedin.com/in/sananali007/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-link"
-              >
-                <FontAwesomeIcon icon={faLinkedin} className="icon" />
-                <span>Linkedin</span>
+
+              <a className="btn github" href="https://github.com/Sananali01" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} />
               </a>
-              <a
-                href="https://www.facebook.com/SananAli53/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-link"
-              >
-                <FontAwesomeIcon icon={faFacebook} className="icon" />
-                <span>Facebook</span>
+
+              <a className="btn google" href="mailto:sananali010@gmail.com" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGoogle} />
+              </a>
+
+              <a className="btn linkedin" href="https://www.linkedin.com/in/sananali007/" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
             </div>
           </div>
+          <div className="contact-form-container">
+            <h3>Contact Form</h3>
+            <form>
+              <label htmlFor="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Enter your Name" />
+
+              <label htmlFor="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="Enter your Email"/>
+
+              <label htmlFor="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Enter your Message"></textarea>
+
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
         </div>
+
       </section>
     </>
   );

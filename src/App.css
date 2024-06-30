@@ -598,8 +598,6 @@ p {
 /* Portfolio Section End */
 
 
-
-
 /* Contact Start */
 
 
@@ -628,19 +626,24 @@ p {
   align-items: flex-start; /* Align items to the top */
   gap: 40px; /* Space between contact info and social icons */
   margin-top: 40px; /* Adjust top margin as needed */
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.contact-info,
+.contact-form-container {
+  flex: 1; /* Take up available space */
+  max-width: 500px; /* Limit width for responsiveness */
+  padding: 20px;
+  border: none; /* Remove border */
+  box-shadow: none; /* Remove box shadow */
 }
 
 .contact-info {
-  flex: 1; /* Take up available space */
-  max-width: 500px; /* Limit width for responsiveness */
   text-align: left; /* Left align text */
-  padding: 20px;
-  border: 2px solid #252525;
-  border-radius: 12px;
-  box-shadow: 4px 8px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-.contact-info h3 {
+.contact-info h3,
+.contact-form-container h3 {
   font-size: 2em;
   color: #4A90E2;
   margin-bottom: 20px; /* Add space below heading */
@@ -652,10 +655,12 @@ p {
   margin: 15px 0;
   line-height: 1.6;
 }
+
 .contact-info p a {
   text-decoration: none;
   color: #333333;
 }
+
 .contact-info p a:hover {
   text-decoration: none;
   color: #4A90E2;
@@ -667,67 +672,113 @@ p {
   font-size: 20px;
 }
 
-.social-media-icons {
-  max-width: 300px; /* Limit width for responsiveness */
-  margin-top: 20px; /* Adjust top margin as needed */
+.contact-form-container {
+  text-align: left;
+ 
+
 }
 
-.social-media-icons h3 {
-  font-size: 2rem;
-  color: #4A90E2;
-  margin-bottom: 20px; /* Add space below heading */
-}
-
-.social-links {
+.contact-form-container form {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Adjust gap between social links */
 }
 
-.social-link {
+.contact-form-container label {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333333;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.contact-form-container button {
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+  background-color: #4A90E2;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form-container button:hover {
+  background-color: #357ABD;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.social-media .btn {
+  display: inline-block;
+  font-size: 24px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
   text-decoration: none;
-  font-size: 20px;
-  color: #333333;
-  transition: color 0.3s;
-  display: flex;
-  align-items: center;
+  width: 50px;  
 }
 
-.social-link .icon {
-  margin-right: 10px; /* Adjust space between icon and text */
+.social-media .facebook {
+  color: #ffffff;
+  background-color: #3b5998;
 }
 
-.social-link:hover {
-  color: #4A90E2; /* Change text color on hover */
+.social-media .instagram {
+  color: #ffffff;
+  background: linear-gradient(45deg, #F9CE34, #EE2A7B, #6228D7);
 }
 
-.social-link span:hover{
-  color: #4A90E2; /* Change icon color on hover */
+.social-media .github {
+  color: #ffffff;
+  background-color: #000000;
 }
 
-.social-link span{
- color: rgb(36, 36, 36);
-}
-/* Social media icon colors based on their names */
-.social-link[href*="github.com"] {
-  color: #333333;
-  /* Customize the color for GitHub */
+.social-media .google {
+  color: #ffffff;
+  background-color: #dd4b39;
 }
 
-.social-link[href*="instagram.com"] {
-  color: #E1306C;
-  /* Customize the color for Instagram */
+.social-media .linkedin {
+  color: #ffffff;
+  background-color: #0082ca;
 }
 
-.social-link[href*="linkedin.com"] {
-  color: #0077B5;
-  /* Customize the color for LinkedIn */
+.social-media .btn:hover {
+  opacity: 0.8;
 }
 
-.social-link[href*="facebook.com"] {
-  color: #1877F2;
-  /* Customize the color for Facebook */
+/* Media Queries for Responsiveness */
+@media (max-width: 750px) {
+  .contact-form-container input,
+  .contact-form-container textarea {
+width: 400px;
+  }
 }
+
+@media (max-width: 480px) {
+
+  .contact-form-container input,
+  .contact-form-container textarea {
+width: 100%;
+  }
+}
+
+
 /* Contact End */
 
 /* Responsive Screens */
