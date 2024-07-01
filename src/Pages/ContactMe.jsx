@@ -2,8 +2,17 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import contactFavicon from "../images/contact.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope,faPhoneVolume,} from "@fortawesome/free-solid-svg-icons";
-import {faFacebookF,faGoogle,faInstagram, faLinkedinIn,faGithub,} from '@fortawesome/free-brands-svg-icons';
+import {
+  faEnvelope,
+  faPhoneVolume,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookF,
+  faGoogle,
+  faInstagram,
+  faLinkedinIn,
+  faGithub,
+} from '@fortawesome/free-brands-svg-icons';
 
 export default function ContactMe() {
   return (
